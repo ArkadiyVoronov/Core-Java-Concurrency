@@ -1,0 +1,8 @@
+class Lazy <T> {
+ private volatile T value;
+
+ T get() {
+ if (value == null)
+ value = initialize();
+ return value;
+ }
