@@ -1,0 +1,10 @@
+class AtomicOperation {
+ private int counter0;
+ private int counter1;
+ void increment() {
+ synchronized (this) {
+ counter0++;
+ counter1++;
+ }
+ }
+}
